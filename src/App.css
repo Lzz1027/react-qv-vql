@@ -1,0 +1,27 @@
+#root {
+  margin: 0;
+  height: 100vh;
+}
+
+.app{
+  margin: 0;
+  height: 100vh;
+}
+
+.app-title{
+  font-size: 5vh;
+  text-align: center;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+.app-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.app-footer{
+  text-align: center;
+  height: 10vh;
+  line-height: 10vh;
+}

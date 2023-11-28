@@ -1,0 +1,54 @@
+.react-node {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.node-circle {
+  width: 70%;
+  border-radius: 14px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border: 3px #aaa solid;
+}
+
+.node-info {
+  margin: 5px 0px;
+  width: 100%;
+  border: 3px #aaa solid;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.node-label {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #eee;
+  text-align: center;
+  list-style: circle;
+}
+
+.node-label-item {
+  width: 100%;
+  text-align: center;
+  font-size: smaller;
+}
+
+.node-props {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  list-style: disc;
+}
+
+.node-props-item {
+  width: 100%;
+  text-align: center;
+  font-size: smaller;
+}

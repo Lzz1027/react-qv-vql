@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@antv/g6": "^4.8.23",
+    "@antv/x6": "^2.15.6",
+    "@antv/x6-react-shape": "^2.2.2",
     "@monaco-editor/react": "^4.6.0",
+    "antd": "^5.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

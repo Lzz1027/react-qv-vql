@@ -13,6 +13,7 @@
   text-align: center;
   line-height: 40px;
   border: 3px #aaa solid;
+  font-weight: bold;
 }
 
 .node-info {
@@ -21,6 +22,7 @@
   border: 3px #aaa solid;
   overflow: hidden;
   border-radius: 14px;
+  font-size: x-small;
 }
 
 .node-label {
@@ -29,13 +31,13 @@
   width: 100%;
   background-color: #eee;
   text-align: center;
-  list-style: circle;
 }
 
 .node-label-item {
   width: 100%;
+  padding: 5px 0px;
   text-align: center;
-  font-size: smaller;
+  font-weight: bold;
 }
 
 .node-props {
@@ -44,11 +46,14 @@
   width: 100%;
   background-color: #fff;
   text-align: center;
-  list-style: disc;
 }
 
 .node-props-item {
   width: 100%;
+  padding: 5px 0px;
   text-align: center;
-  font-size: smaller;
+}
+
+.node-add-button{
+  justify-content: center;
 }

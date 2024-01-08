@@ -10,12 +10,12 @@ const NodeComponent = ({ node }: { node: Node }) => {
 
   // labels 列表
   const LabelsList = nodeData.nodeLabels.map(
-    (label) => <li className='node-label-item' key={label.id}>Label:{label.value}</li>
+    (label:object) => <li className='node-label-item' key={label.id}>{label.value}</li>
   );
 
   // Props 列表
   const PropsList = nodeData.nodeProps.map(
-    (prop) =>
+    (prop:object) =>
       <li className='node-props-item' key={prop.id}>
         <span className='node-props-key'>{prop.propKey}</span>
         <span className='node-props-op'>{prop.propOp}</span>
@@ -29,7 +29,7 @@ const NodeComponent = ({ node }: { node: Node }) => {
   // 设置添加按钮的内容和事件
   const items = [{ key: 1, label: 'Label' }, { key: 2, label: 'Prop' }]
   const onMenuClick: MenuProps['onClick'] = (e) => {
-    console.log('click', e);
+    console.log('click', e.key);
   };
 
   return (
@@ -51,7 +51,7 @@ const NodeComponent = ({ node }: { node: Node }) => {
       </div>
 
       {/* 添加类别或属性限制 */}
-      <Dropdown.Button menu={{ items, onClick: onMenuClick }}>Add</Dropdown.Button>
+      <Dropdown.Button className='node-add-button' menu={{ items, onClick: onMenuClick }}>Add</Dropdown.Button>
     </div>
   )
 }

@@ -24,6 +24,23 @@ export default class Example extends React.Component {
       background: {
         color: '#F2F7FA',
       },
+      grid: {
+        visible: true,
+        type: 'doubleMesh',
+        args: [
+          {
+            color: '#eee', // 主网格线颜色
+            thickness: 1, // 主网格线宽度
+          },
+          {
+            color: '#ddd', // 次网格线颜色
+            thickness: 1, // 次网格线宽度
+            factor: 4, // 主次网格线间隔
+          },
+        ],
+      },
+      panning: true,
+      mousewheel: true
     })
 
     const nodes = [
@@ -45,7 +62,7 @@ export default class Example extends React.Component {
               id: 1,
               propKey: "name",
               propOp: ":",
-              propValue:"Keenu Reeves"
+              propValue: "Keenu Reeves"
             }
           ]
         },
